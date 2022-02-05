@@ -23,7 +23,7 @@ const AddNewPost = ({ isUpdate, id }) => {
                      // Cancel any outgoing refetches (so they don't overwrite our optimistic update)
                     await cache.cancelQueries("post");
 
-                    // Snapshot the previous value
+                    // Snapshot the previous 
                     const previousPost = cache.getQueryData(["post", id]);
 
                     // Optimistically update to the new value
